@@ -30,5 +30,50 @@ public class MainClass {
 
         s = "Good";
         System.out.println("s = " + s);
+
+        ChildClass child1 = new ChildClass();
+        child1.setInfo("hong gil dong", "M", 20);
+        child1.getInfo();
+
+        //child1.mySecret();
+
+        ObjectClass obj1 = new ObjectClass();
+        ObjectClass obj2 = new ObjectClass();
+        ObjectClass obj3 = new ObjectClass();
+
+        obj1.getInfo();
+        obj1 = null; // 레퍼런스 x
+        //obj1.getInfo();
+
+        obj2.getInfo();
+        //System.out.println("obj1 : " + obj1);
+        //System.out.println("obj2 : " + obj2);
+        //System.out.println("obj3 : " + obj3);
+
+
+        int[] iArr = {10, 20, 30};
+        ObjectClass2 obj21 = new ObjectClass2("Hello", iArr);
+        }
+
+        //디폴트 생성자
+        ObjectEx obj31 = new ObjectEx();
+
+        // 사용자 정의 생성자
+        ObjectEx obj32 = new ObjectEx(10);
+        int arr[] = {10, 20, 30};
+
+        ObjectEx obj33 = new ObjectEx("Java", arr);
+
+        // 소멸자
+        ObjectEx obj34;
+
+
+
+        // this 키워드
+        int ints[] = {10, 20, 30};
+        ObjectEx obj35 = new ObjectEx(10, "Java", ints);
+
+        ObjectClass2 obj41 = new ObjectClass2(10, 20);
+
     }
-}
+
